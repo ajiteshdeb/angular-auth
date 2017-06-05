@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Login &amp; Register Templates</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+        <!-- bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.js"></script>
+
+        <script>
+
+
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyDou00WkTqysHrgVUeGXYteXAmK7-9GVw4",
+        authDomain: "angular-auth-a99bc.firebaseapp.com",
+        databaseURL: "https://angular-auth-a99bc.firebaseio.com",
+        storageBucket: "angular-auth-a99bc.appspot.com",
+        };
+        firebase.initializeApp(config);
+
+        // Get a reference to the database service
+        var database = firebase.database();
+        var rootRef = firebase.database().ref();
+
+
+
+        </script>
+        <script src="app.js"></script>
+ 
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container" ng-app="sampleApp" >
+
+                
+                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Bootstrap</strong> Login &amp; Register Forms</h1>
+                            <div class="description">
+                            	<p>
+	                            	This is a free responsive <strong>"login and register forms"</strong> template made with Bootstrap. 
+	                            	Download it on <a href="http://azmind.com" target="_blank"><strong>AZMIND</strong></a>, 
+	                            	customize and use it as you like!
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Login to our site</h3>
+	                            		<p>Enter email and password to log on:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-lock"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="" method="post" class="login-form">
+				                    	<div class="form-group">
+                                            <label class="sr-only" for="form-email">Email</label>
+                                            <input type="text" name="login-form-email" placeholder="Email..." class="form-email form-control" id="login-form-email">
+                                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="login-form-password" placeholder="Password..." class="form-password form-control" id="login-form-password">
+				                        </div>
+				                        <button type="submit" class="btn">Sign in!</button>
+				                    </form>
+			                    </div>
+		                    </div>
+		                
+		                	<div class="social-login">
+	                        	<h3>...or login with:</h3>
+	                        	<div class="social-login-buttons">
+		                        	<a class="btn btn-link-2" href="#">
+		                        		<i class="fa fa-facebook"></i> Facebook
+		                        	</a>
+		                        	<a class="btn btn-link-2" href="#">
+		                        		<i class="fa fa-twitter"></i> Twitter
+		                        	</a>
+		                        	<a class="btn btn-link-2" href="#">
+		                        		<i class="fa fa-google-plus"></i> Google Plus
+		                        	</a>
+	                        	</div>
+	                        </div>
+	                        
+                        </div>
+                        
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-1"></div>
+                        	
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p>Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom" ng-controller="SampleCtrl">
+                                <div ng-if="message" class="alert alert-success fade in">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Congrates! : <strong>{{ message }}</strong></p>
+                </div>
+
+                <div ng-if="error" class="alert alert-danger fade in">
+                    <button type="button" class="close" data-dismiss="alert" aria-  label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Error: <strong>{{ error }}</strong></p>
+                </div>
+				                    <form name="registrationForm" novalidate role="form" action="" method="post" class="registration-form" autocomplete="off">
+				                    	<div class="form-group" ng-class="{ 'has-error': registrationForm.username.$touched && registrationForm.username.$invalid || submitted && registrationForm.email.$error.required}">
+                                            <label class="sr-only" for="form-username">Username</label>
+                                            <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username" ng-model="username" ng-minlength="3" ng-maxlength="10" required>
+
+                                            <div class="help-block" ng-messages="registrationForm.username.$error" ng-show="registrationForm.username.$touched || submitted && registrationForm.username.$error.required">
+                                            <p ng-message="minlength">Username is too short.</p>
+                                            <p ng-message="maxlength">Username is too long.</p>
+                                            <p ng-message="required">Username is required.</p>
+                                            </div>
+                                        </div>
+				                        
+                                        
+
+
+				                        <div class="form-group" ng-class="{ 'has-error': registrationForm.email.$touched && registrationForm.email.$invalid || submitted && registrationForm.email.$error.required}">
+				                        	<label class="sr-only" for="form-email">Email</label>
+				                        	<input type="email" name="email" placeholder="Email..." class="form-email form-control" id="registration-form-email" ng-model="email" autocomplete="off" required >
+
+                                            <div class="help-block" ng-messages="registrationForm.email.$error" ng-show="registrationForm.email.$touched || submitted && registrationForm.email.$error.required ">
+                                            <p ng-message="email">This needs to be a valid email</p>
+                                            <p ng-message="required">Email is required.</p>
+    
+                                            </div>
+
+                                                           
+                                            
+				                        </div>
+
+                                        
+				                        <div class="form-group" ng-class="{ 'has-error': registrationForm.password.$touched && registrationForm.password.$invalid || submitted && registrationForm.password.$error.required}">
+                                            <label class="sr-only" for="form-password">Password</label>
+                                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="registration-form-password" ng-model="password" ng-minlength="6" required>
+
+                                            <div class="help-block" ng-messages="registrationForm.password.$error" ng-show="registrationForm.password.$touched || submitted && registrationForm.password.$error.required">
+
+                                            <p ng-message="minlength">Password at least 6 charecter long...</p>
+                                            <p ng-message="required">Password is required.</p>
+    
+                                            </div>
+
+                                        </div>
+				                        <button type="button" class="btn" ng-click="createUser()">Sign me up!</button>
+				                    </form>
+                                    
+  
+			                    </div>
+                        	</div>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<div class="footer-border"></div>
+        				<p>Made by <strong>AngularJs</strong> and Powered by <strong>Google's Firebase </strong>
+        					. have a fun. <i class="fa fa-smile-o"></i></p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript 
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
